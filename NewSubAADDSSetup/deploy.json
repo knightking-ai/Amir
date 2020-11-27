@@ -36,7 +36,7 @@
         }
     },
     "variables": {
-         "_artifactsLocation": "https://raw.githubusercontent.com/knightking-ai/Amir/master",
+         "_artifactsLocation": "https://raw.githubusercontent.com/knightking-ai/Amir/main",
         "AdminPasswordSecret": "adminPassword",
         "domainUsername": "domainJoiner",
         "vnetName": "aaddsVnet",
