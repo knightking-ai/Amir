@@ -77,7 +77,7 @@
         }
     },
     "variables": {
-        "_artifactsLocation": "https://raw.githubusercontent.com/knightking-ai/Amir/master",
+        "_artifactsLocation": "https://raw.githubusercontent.com/knightking-ai/Amir/main",
         "AdminPasswordSecret": "adminPassword",
         "existingDomainUsername": "[first(split(parameters('DomainJoinAccountUPN'), '@'))]",
         "existingDomainName": "[split(parameters('DomainJoinAccountUPN'), '@')[1]]",
