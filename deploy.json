@@ -81,7 +81,7 @@
         "AdminPasswordSecret": "adminPassword",
         "existingDomainUsername": "[first(split(parameters('DomainJoinAccountUPN'), '@'))]",
         "existingDomainName": "[split(parameters('DomainJoinAccountUPN'), '@')[1]]",
-        "identityName": "WVDServicePrincipal",
+        "identityName": "WVDServicePrincipal1",
         "location": "[resourcegroup().location]",
         "rgName": "[resourcegroup().name]",
         "keyvaultName": "[concat('keyvault', parameters('utcValue'))]",
@@ -92,8 +92,8 @@
         "jobGuid0": "[guid(toLower(uniquestring(variables('identityName'), resourceGroup().id, parameters('utcValue'),'credentials')))]",
         "jobGuid": "[guid(toLower(uniquestring(variables('identityName'), resourceGroup().id, parameters('utcValue'),variables('autoAccountName'))))]",
         "jobGuid2": "[guid(toLower(uniquestring(variables('identityName'), subscription().id, parameters('utcValue'),'devOpsSetup')))]",
-        "devOpsName": "[concat('WVDQuickStartOrg', skip(parameters('utcValue'), 9))]",   
-        "devOpsProjectName": "[concat('WVDProj', skip(parameters('utcValue'), 9))]",
+        "devOpsName": "[concat('WVDOrg', skip(parameters('utcValue'), 8))]",   
+        "devOpsProjectName": "[concat('WVDProj', skip(parameters('utcValue'), 8))]",
         "targetGroup": "WVDTestUsers",
         "automationVariables": [
             {
